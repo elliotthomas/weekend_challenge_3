@@ -5,42 +5,49 @@
     <script src="jquery-3.1.1.js" charset="utf-8"></script>
     <script src="client.js" charset="utf-8"></script>
     <!-- Latest compiled and minified CSS -->
+    <link rel = "stylesheet" href = "styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel = "stylesheet" href = "styles.css">
     <title>Calculator</title>
   </head>
   <body>
-    <form name = "calculator">
+  <div class="container">
+    <div class= "page-header text-center">
+    <h4>Calculator</h4>
+    </div>
+  </div>
       <div class="row">
         <input type="text" class= "output-box">
       </div>
+      <div class = "box">
       <div class = "row">
-        <button type="button" class = "number-button" data-value= "1">1</button>
-        <button type="button" class = "number-button" data-value= "2">2</button>
-        <button type="button" class = "number-button" data-value= "3">3</button>
-        <button type="button" class = "operator-button" data-value= "+">+</button>
+        <button type="button" class = "btn btn-info btn-sm number-button" data-value= "1">1</button>
+        <button type="button" class = "btn btn-info btn-sm number-button" data-value= "2">2</button>
+        <button type="button" class = "btn btn-info btn-sm number-button" data-value= "3">3</button>
+        <button type="button" class = "btn btn-warning btn-sm operator-button" data-value= "+">+</button>
       </div>
       <div class = "row">
-        <button type="button" class = "number-button" data-value= "4">4</button>
-        <button type="button" class = "number-button" data-value= "5">5</button>
-        <button type="button" class = "number-button" data-value= "6">6</button>
-        <button type="button" class = "operator-button" data-value= "-">-</button>
+        <button type="button" class = "btn btn-info btn-sm number-button" data-value= "4">4</button>
+        <button type="button" class = "btn btn-info btn-sm number-button" data-value= "5">5</button>
+        <button type="button" class = "btn btn-info btn-sm number-button" data-value= "6">6</button>
+        <button type="button" class = "btn btn-warning btn-sm operator-button" data-value= "-">-</button>
       </div>
       <div class = "row">
-        <button type="button" class = "number-button" data-value= "7">7</button>
-        <button type="button" class = "number-button" data-value= "8">8</button>
-        <button type="button" class = "number-button" data-value= "9">9</button>
-        <button type="button" class = "operator-button" data-value= "*">x</button>
+        <button type="button" class = "btn btn-info btn-sm number-button" data-value= "7">7</button>
+        <button type="button" class = "btn btn-info btn-sm number-button" data-value= "8">8</button>
+        <button type="button" class = "btn btn-info btn-sm number-button" data-value= "9">9</button>
+        <button type="button" class = "btn btn-warning btn-sm operator-button" data-value= "*">x</button>
       </div>
       <div class = "row">
-        <button type="button" class = "number-button" data-value= "0">0</button>
-        <button type="button" class = "decimal-button" data-value= ".">.</button>
-        <button type="button" class = "equal-button" data-value= "=">=</button>
-    </form>
+        <button type="button" class = "btn btn-info btn-sm number-button" data-value= "0">0</button>
+        <button type="button" class = "btn btn-danger btn-sm " id = "clearButton">C</button>
+        <button type="button" class = "btn btn-success btn-sm equal-button" data-value= "=">=</button>
+        <button type="button" class = "btn btn-warning btn-sm operator-button" data-value= "/">/</button>
+      </div>
+    </div>
 
 
   </body>
